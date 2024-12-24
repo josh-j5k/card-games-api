@@ -18,7 +18,7 @@ class SolitaireController extends Controller
         $validated = $request->validate([
             'name' => 'required|string',
             'score' => 'required|int',
-            'time' => 'required|string'
+            'time' => 'required|int'
         ]);
 
         Solitaire::create($validated);
