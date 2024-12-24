@@ -3,10 +3,13 @@
 namespace App\Models;
 
 use App\Casts\Time;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Solitaire extends Model
 {
+    /** @use HasFactory<\Database\Factories\SolitaireFactory> */
+    use HasFactory;
     protected $table = 'solitaire';
     /**
      * The attributes that are mass assignable.
